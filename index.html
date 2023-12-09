@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <!-- <link rel="stylesheet" href="./theme.css"> -->
+    <title>Card game</title>
+</head>
+
+<body id="body">
+
+    <div class="menu">
+        <ul>
+            <li>
+                <button id="play">Play</button>
+            </li>
+
+            <li>
+                <button id="settings">Settings</button>
+                <div class="settings hidden">
+                    <div class="close"></div>
+                    <ul>
+                        <li>
+                            <label>Sound</label>
+                            <input type="range" name="" id="sound" max="1" min="0" step="0.1">
+                        </li>
+                        <li>
+                            <select name="" id="difficulty">
+                                <option value="">Easy</option>
+                                <option value="">Medium</option>
+                                <option value="">Hard</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="">Theme</label>
+                            <input type="radio" name="theme" id="themeFirst" checked>
+                            <input type="radio" name="theme" id="themeSecond">
+                            <input type="radio" name="theme" id="themeThird">
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="game hidden">
+        <ul class="cards">
+
+        </ul>
+    </div>
+
+    <!-- Theme -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+    <!-- Theme -->
+
+
+    <audio id="music" src=""></audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

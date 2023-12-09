@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'fasebulan';
+    src: url("./FaseBulan-BW633.otf");
+}
+
+@font-face {
+    font-family: 'ebullience';
+    src: url("./Ebullience-z8R0l.otf");
+}
+
+@font-face {
+    font-family: 'grim';
+    src: url("./GrimReaper-jEBRO.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms;
+    color: #F0ECE5;
+    text-shadow: 0px 0px 10px #F0ECE5;
+}
+
+body {
+    overflow: hidden;
+    background-color: #161A30;
+    font-family: 'fasebulan';
+}
+
+ul {
+    list-style-type: none;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+}
+
+button:active,
+a:active {
+    transform: scale(0.95);
+}
+
+
+button {
+    font-family: 'fasebulan';
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #31304D;
+    box-shadow: 0px 0px 10px #31304D;
+}
+
+select {
+    background-color: transparent;
+    text-shadow: none;
+    font-family: 'fasebulan';
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select>option {
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}
+
+audio {
+    display: none;
+}
+
+
+
+/* Code */
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.menu>ul>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.settings {
+    font-size: 30px;
+    position: absolute;
+    background-color: #161A30;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.settings>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+    position: absolute;
+}
+
+.settings>ul>li {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: #292929;
+}
+
+.game {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: #161A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 260px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.medium {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(3, 160px);
+}
+
+.hard {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 120px);
+}
+
+.card {
+    border-radius: 10px;
+    background: transparent;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px #f0ece575;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.card__face {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    left: 0;
+    top: 0;
+}
+
+.card__face--front {
+    border-radius: 10px;
+}
+
+.card__face--back {
+    background: blue;
+    transform: rotateY(180deg);
+}
