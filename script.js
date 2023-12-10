@@ -318,11 +318,3 @@ playBtn.addEventListener('click', () => {
 })
 
 // Play
-
-addEventListener('keydown', () => {
-    playMusic()
-})
-
-addEventListener("click", () => {
-    playMusic()
-})
